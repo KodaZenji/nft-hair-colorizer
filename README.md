@@ -95,21 +95,20 @@ In the first cell:
 
 **3. Upload your sprites**
 
-In the second cell, run this to upload your PNG files:
+In Colab, click the **Files icon** on the left sidebar, then click the **Upload icon** and upload your `Hairstyles.zip` directly into the content root (`/content/`). Wait for the upload to finish, then run this cell to extract it:
 
 ```python
-from google.colab import files
-import os
+import zipfile, os
 
-os.makedirs("Hairstyles", exist_ok=True)
-uploaded = files.upload()  # opens a file picker — select all your PNGs
+with zipfile.ZipFile("Hairstyles.zip", "r") as z:
+    z.extractall("Hairstyles")
 
-for filename, data in uploaded.items():
-    with open(f"Hairstyles/{filename}", "wb") as f:
-        f.write(data)
-
-print("Uploaded:", list(uploaded.keys()))
+print(os.listdir("Hairstyles")) 
 ```
+
+
+Tip: On Windows, select all your PNGs → right-click → Compress to ZIP file.
+On Mac, select all → right-click → Compress items.
 
 **4. Paste and configure the script**
 
