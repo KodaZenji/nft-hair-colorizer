@@ -138,8 +138,9 @@ Your browser will download a zip of all colored sprites.
 {sprite_name}_{ColorName}#{weight}.png
 ```
 
-Example: `curly_fade_Black#40.png`, `waves_Blonde#5.png`
+Example: `short_textured_Black#40.png`, `waves_Blonde#5.png`
 
+![preview](preview.png)
 ---
 
 ## Sprite Requirements
