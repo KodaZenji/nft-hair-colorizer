@@ -11,12 +11,6 @@ across multiple color palettes — built for NFT trait generation workflows.
 - Compatible with HashLips, Bueno, and any `#weight` filename-based combiner
 - No OpenCV dependency — only Pillow + NumPy
 
-- ## ⚡ Quick Start
-1. Draw hairstyles in grayscale in ibis Paint, export as PNG
-2. Drop PNGs into a `Hairstyles/` folder
-3. Edit the `COLORABLE` list in the script with your filenames
-4. Run: `pip install Pillow numpy && python generate_hair_colors_example.py`
-5. Pick up your colored variants from `Hairstyles_Colored/`
 
 ---
 
@@ -28,6 +22,13 @@ across multiple color palettes — built for NFT trait generation workflows.
 - pip
 
 ### Steps
+
+- ## ⚡ Quick Start
+1. Draw hairstyles in grayscale in ibis Paint, export as PNG
+2. Drop PNGs into a `Hairstyles/` folder
+3. Edit the `COLORABLE` list in the script with your filenames
+4. Run: `pip install Pillow numpy && python generate_hair_colors_example.py`
+5. Pick up your colored variants from `Hairstyles_Colored/`
 
 **1. Download the script**
 
